@@ -84,9 +84,10 @@ body{
   background: #111821;
 }
 
-.col .grey-square {
+.projects {
+  display: flex;
+  justify-content: center;
 }
-
 .grey-square {
   background-color: #252d35;
   border-radius: 10px;
@@ -97,9 +98,7 @@ body{
 }
 .grey-square .me-text {
   font-size: 1.5rem;
-  font-weight: bold;
-  text-align: justify;
-  position: static;
+  font-family: 'Roboto', sans-serif;
 }
 
 .img-about-me img {
@@ -113,12 +112,15 @@ body{
 .project-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-size: cover;
+  border-radius: 10px;
 }
 
-.project-text {
-  text-align: center;
+.project-img img:hover {
+  -webkit-transform:scale(1.07);
+  -webkit-transition:all .5s ease;
 }
+
 
 .what-i-do-text {
   font-size: 15px;
@@ -126,12 +128,15 @@ body{
 }
 
 .what-i-do-img {
-  width: 50px;
-  height: 50px;
+  padding-right: 3px;
+  width: auto;
+  max-width: 80px;
+  height: auto;
+  max-height: 55px;
 }
 
-.listas-img-wid {
-  align-items: center;
+.line-what-i-do {
+  display: none;
 }
 
 .place-career {
@@ -176,12 +181,9 @@ footer {
     border-left: 0;
   }
 
-  .grey-square {
-    margin-right: 0.5rem;
-  }
-
   .grey-square .me-text {
-    font-size: 20px;
+    font-size: 21px;
+    text-align: justify;
   }
 
   .img-about-me {
@@ -198,4 +200,9 @@ footer {
   footer {
     margin-left: 0;
   }
+
+  .line-what-i-do {
+    display: unset;
+  }
+
 }

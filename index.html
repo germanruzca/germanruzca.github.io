@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/all.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
@@ -78,13 +84,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#what-i-do"
-                  ><i class="fas fa-bookmark fa-fw me-2"></i>What I do</a
+                <a class="nav-link" href="#projects"
+                  ><i class="fas fa-user fa-fw me-2"></i>Projects</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects"
-                  ><i class="fas fa-user fa-fw me-2"></i>Projects</a
+                <a class="nav-link" href="#what-i-do"
+                  ><i class="fas fa-bookmark fa-fw me-2"></i>What I do</a
                 >
               </li>
               <li class="nav-item">
@@ -112,6 +118,7 @@
         </div>
       </nav>
     </header>
+    <a name="about-me"></a>
     <div class="main-wrapper">
       <a name="about-me"></a>
       <section class="about-me p-3 p-lg-5">
@@ -119,10 +126,9 @@
           <div class="row superposicion">
             <div class="col">
               <div class="grey-square">
-                <a name="about-me"></a>
                 <div><h2 class="mb-1 ms-4">@germanruzca</h2></div>
                 <div class="mb-3 ms-4">Student Software Developer</div>
-                <div class="me-text container-fluid mb-4 ms-0">
+                <div class="text-justify me-text container-fluid mb-4 ms-0">
                   I’m German. I am a 21 years old student from Colima, Mexico.
                   <br />
                   <br />
@@ -142,50 +148,56 @@
           </div>
         </div>
       </section>
+      <a name="projects"></a>
       <section class="projects p-3 p-lg-5">
         <div class="container">
-          <div class="grey-square" style="align-content:center">
+          <div class="grey-square" style="align-content: center">
             <div>
-              <div class="me-text ms-4 pt-1 pb-2 pt-3">
-                <a name="projects"></a>
-                <h3>PROJECTS</h3>
+              <div class="text-center me-text pt-3">
+                PROJECTS
               </div>
             </div>
-            <div class="row ms-5 me-4 ms-md-0 ps-lg-3">
-              <div class="col">
+            <div class="row p-lg-4 p-4 p-md-4 p-sm-5">
+              <div class="col-lg-4 col-12 col-sm-12 col-md-4">
                 <div class="project-img">
-                  <img src="./assets/img/project1.png" alt="" />
+                  <a
+                    target="_blank"
+                    href="https://germanruzca.social/rock-paper-scissors/"
+                    ><img src="./assets/img/rps.png" alt=""
+                  /></a>
                 </div>
-                <div class="project-text">bungalows</div>
+                <div class="text-center pt-3 pb-3 place-career">
+                  Rock, Paper and Scissor
+                </div>
               </div>
-              <div class="col">
+              <div class="col-lg-4 col-12 col-sm-12 col-md-4">
                 <div class="project-img">
-                  <img src="./assets/img/project2.png" alt="" />
+                  <img src="./assets/img/rps.png" alt="" />
                 </div>
-                <div class="project-text">profile</div>
+                <div class="text-center pt-3 pb-3 place-career">Profile</div>
               </div>
-              <div class="col">
+              <div class="col-lg-4 col-12 col-sm-12 col-md-4">
                 <div class="project-img">
-                  <img src="./assets/img/project3.png" alt="" />
+                  <img src="./assets/img/rps.png" alt="" />
                 </div>
-                <div class="project-text">tasks</div>
+                <div class="text-center pt-3 place-career">Tasks</div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <a name="what-i-do"></a>
       <section class="projects p-3 p-lg-5">
         <div class="container">
           <div class="grey-square">
             <div>
-              <div class="me-text ms-4 pt-1 pb-2 pt-3">
-                <a name="what-i-do"></a>
-                <h3>WHAT I LIKE</h3>
+              <div class="text-center me-text pt-3">
+                WHAT I DO
               </div>
             </div>
-            <div class="row ms-5 me-4 ms-md-0 ps-lg-3">
-              <div class="col">
-                <div class="project-text place-career">Backend</div>
+            <div class="row p-lg-4 p-4 p-md-4 p-sm-5">
+              <div class="col-lg-4 col-12 col-sm-12 col-md-4">
+                <div class="text-center pb-3 place-career">Backend</div>
                 <div>
                   <h1 class="what-i-do-text">
                     I buld backend aplications to send and receive information
@@ -195,7 +207,7 @@
                   <h1 class="what-i-do-text">8 months</h1>
                 </div>
                 <div>
-                  <ul class="list-inline m-lg-4">
+                  <ul class="list-inline d-flex justify-content-center pt-4">
                     <li class="list-inline-item">
                       <img
                         class="what-i-do-img"
@@ -227,8 +239,9 @@
                   </ul>
                 </div>
               </div>
-              <div class="col">
-                <div class="project-text place-career">Frontend</div>
+              <hr class="line-what-i-do" />
+              <div class="col-lg-4 col-12 col-sm-12 col-md-4">
+                <div class="text-center pb-3 place-career">Frontend</div>
                 <div>
                   <h1 class="what-i-do-text">
                     I buld frontend aplications to send and receive information
@@ -238,7 +251,7 @@
                   <h1 class="what-i-do-text">1 month</h1>
                 </div>
                 <div>
-                  <ul class="list-inline m-lg-4">
+                  <ul class="list-inline d-flex justify-content-center pt-4">
                     <li class="list-inline-item">
                       <img
                         class="what-i-do-img"
@@ -260,28 +273,22 @@
                         alt=""
                       />
                     </li>
-                    <li class="list-inline-item">
-                      <img
-                        class="what-i-do-img"
-                        src="./assets/img/posthres.png"
-                        alt=""
-                      />
-                    </li>
                   </ul>
                 </div>
               </div>
-              <div class="col">
-                <div class="project-text place-career">Data Science</div>
+              <hr class="line-what-i-do" />
+              <div class="col-lg-4 col-12 col-sm-12 col-md-4">
+                <div class="text-center pb-3 place-career">Data Science</div>
                 <div>
                   <h1 class="what-i-do-text">
                     I also like learn about the Data Science area.
                   </h1>
                 </div>
                 <div>
-                  <h1 class="what-i-do-text">1 month</h1>
+                  <h1 class="what-i-do-text pt-3">1 month</h1>
                 </div>
                 <div>
-                  <ul class="list-inline m-lg-4 listas-img-wid">
+                  <ul class="list-inline d-flex justify-content-center pt-4">
                     <li class="list-inline-item">
                       <img
                         class="what-i-do-img"
@@ -292,14 +299,7 @@
                     <li class="list-inline-item">
                       <img
                         class="what-i-do-img"
-                        src="./assets/img/pandas.png"
-                        alt=""
-                      />
-                    </li>
-                    <li class="list-inline-item">
-                      <img
-                        class="what-i-do-img"
-                        src="./assets/img/excel.png"
+                        src="./assets/img/colab.png"
                         alt=""
                       />
                     </li>
@@ -310,27 +310,29 @@
           </div>
         </div>
       </section>
+      <a name="careers"></a>
       <section class="projects p-3 p-lg-5">
         <div class="container text-center">
           <div class="grey-square">
             <div>
-              <div class="me-text ms-4 pt-1 pb-2 pt-3">
-                <a name="careers"></a>
-                <h3>CAREER</h3>
+              <div class="text-center me-text pt-3">
+                CAREER
               </div>
             </div>
-            <div class="row ms-5 me-4 ms-md-0">
-              <div class="col">
+            <div class="row p-lg-4 p-4 p-md-4 p-sm-5">
+              <div class="col-sm-12 pb-4">
                 <div class="place-career">University of Colima</div>
                 <div>2018</div>
-                <div>Telematics Engeeniring</div>
+                <div>Telematic Engineering</div>
               </div>
-              <div class="col">
+              <hr />
+              <div class="col-sm-12 pb-4">
                 <div class="place-career">Secretaria De Salud Colima</div>
                 <div>2021</div>
-                <div>Constitucinal Service</div>
+                <div>University Constitutional Service</div>
               </div>
-              <div class="col">
+              <hr />
+              <div class="col-sm-12 pb-4">
                 <div class="place-career">VolcanCode</div>
                 <div>2021</div>
                 <div>Intership</div>
