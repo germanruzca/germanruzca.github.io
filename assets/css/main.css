@@ -99,6 +99,7 @@ body{
 .grey-square .me-text {
   font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
+  text-align: justify;
 }
 
 .img-about-me img {
